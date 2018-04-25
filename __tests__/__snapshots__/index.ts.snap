@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request should return a missing projectId error 1`] = `[Error: Parameter "projectId" is missing]`;
+
+exports[`Request should return a missing text error 1`] = `[Error: Parameter "text" is missing]`;
+
+exports[`Request should return a missing token error 1`] = `[Error: Token is missing]`;
+
+exports[`Request should return a status error 1`] = `[Error: Status 400]`;
+
+exports[`Request should return a value 1`] = `
+Object {
+  "intents": Array [
+    Object {
+      "features": Array [],
+      "name": "collection+await",
+    },
+  ],
+}
+`;
+
+exports[`Request should return an unexpected error 1`] = `[Error: something awful happened]`;

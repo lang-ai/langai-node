@@ -1,0 +1,62 @@
+{
+  "name": "langai-node",
+  "version": "0.1.0",
+  "description": "LangAI NodeJS API client",
+  "author": "LangAI",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "keywords": [
+    "language",
+    "nlp",
+    "artificial intelligence",
+    "ai",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && npm run testonly && npm run lint && npm run format",
+    "testonly": "jest --coverage",
+    "lint": "tslint \"{src,__tests__}/**/*.ts\"",
+    "format": "prettier --single-quote --trailing-comma es5 --write \"{src,__tests__}/**/*.ts\" \"README.md\"",
+    "prettier-diff": "prettier --single-quote --trailing-comma es5 --list-different \"{src,__tests__}/**/*.ts\" \"README.md\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "needle": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/needle": "^2.0.2",
+    "@types/nock": "^9.1.1",
+    "@types/node": "^4.0.35",
+    "jest": "^22.0.4",
+    "jest-cli": "^22.0.4",
+    "nock": "^9.1.5",
+    "prettier": "^1.9.2",
+    "ts-jest": "^22.0.0",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lang-ai/node-langai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lang-ai/node-langai/issues"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "testPathIgnorePatterns": [
+      "__tests__/utils.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "mapCoverage": true
+  }
+}
