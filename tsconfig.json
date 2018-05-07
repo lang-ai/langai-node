@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
-    "target": "es5",
+    "target": "es6",
+    "module": "commonjs",
     "lib": [
-      "es2015"
+      "es2017",
+      "es7",
+      "es6",
     ],
-    "sourceMap": true,
-    "removeComments": true,
+    "outDir": "dist",
     "declaration": true
   },
-  "include": [
-    "./src/**/*"
+  "types": [
+    "nock"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
   ]
 }
