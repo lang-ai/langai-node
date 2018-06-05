@@ -28,13 +28,13 @@ import Lang from 'langai-node';
 // const Lang = require('langai-node').default;
 
 const lang = new Lang({
-  token: "your-token"
+  token: 'your-token',
 });
 
 lang
   .analyze({
-    text: "your-text",
-    projectId: "your-projectId"
+    text: 'your-text',
+    projectId: 'your-projectId',
   })
   .then(data => {
     console.log(data);
@@ -42,7 +42,6 @@ lang
   .catch(err => {
     console.log(err);
   });
-
 ```
 
 > Note: This feature[`import`] is only just beginning to be implemented in browsers natively at this time. It is implemented in many transpilers, such as TypeScript and Babel, and bundlers such as Rollup, Webpack and Parcel.
