@@ -17,6 +17,7 @@ export interface AnalyzeRequest {
 
 export interface AnalyzeResponse {
   intents: Intent[];
+  score: number;
 }
 
 export default class Lang {

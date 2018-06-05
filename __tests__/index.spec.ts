@@ -70,7 +70,7 @@ describe('Request', () => {
     nock('https://api.lang.ai')
       .post(`/v1/${endpoint}`)
       .reply(200, {
-        intents: [{ name: 'collection+await', features: [] }],
+        intents: [{ name: 'collection+await', features: [], score: 0.83 }],
       });
 
     lang.analyze(params).then(data => {
