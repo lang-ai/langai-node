@@ -1,4 +1,4 @@
-# langai-node
+# langai-node ![travis](https://api.travis-ci.com/lang-ai/langai-node.svg?branch=master)
 
 A LangAI API client written in Node.js.
 
