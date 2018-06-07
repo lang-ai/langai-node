@@ -40,10 +40,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lang-ai/node-langai.git"
+    "url": "git+https://github.com/lang-ai/langai-node.git"
   },
   "bugs": {
-    "url": "https://github.com/lang-ai/node-langai/issues"
+    "url": "https://github.com/lang-ai/langai-node/issues"
   },
   "jest": {
     "transform": {
