@@ -1,3 +1,7 @@
+## NOTE: This API client is deprecated. Please refer to the [API docs](docs.lang.ai/) to use the API in your own instance of Lang Enterprise.
+
+---
+
 # langai-node [![travis](https://api.travis-ci.com/lang-ai/langai-node.svg?branch=master)](https://travis-ci.com/lang-ai/langai-node)
 
 A LangAI API client written in Node.js.
